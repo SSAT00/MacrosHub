@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WelcomeWindow</class>
+ <widget class="QWidget" name="WelcomeWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>612</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>612</width>
+    <height>792</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>612</width>
+    <height>792</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MacrosHub</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>imgs/logo_apple.png</normaloff>imgs/logo_apple.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#WelcomeWindow{background-color:#fff;}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>70</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>70</number>
+   </property>
+   <property name="horizontalSpacing">
+    <number>10</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>70</number>
+   </property>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="btn_next">
+     <property name="minimumSize">
+      <size>
+       <width>260</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>260</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#btn_next{color:#fff;border-radius:30px;background-color:#7CC8FF;}
+QPushButton#btn_next::hover{color:#fff;border-radius:30px;background-color:#52A9FF;}</string>
+     </property>
+     <property name="text">
+      <string>Завершить</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="2">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QFrame" name="f_content_2part">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>100</number>
+      </property>
+      <property name="topMargin">
+       <number>30</number>
+      </property>
+      <property name="rightMargin">
+       <number>100</number>
+      </property>
+      <property name="bottomMargin">
+       <number>30</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QFrame" name="f_sex">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <property name="verticalSpacing">
+          <number>2</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="rb_male">
+           <property name="font">
+            <font>
+             <family>Montserrat</family>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton#rb_male{color:#3E3E3E;}
+QRadioButton#rb_male::indicator{background-color:#fff;width:18px;height:18px;border-radius:13px;}
+QRadioButton#rb_male::indicator:unchecked{border:4px solid #D9D9D9;}
+QRadioButton#rb_male::indicator:checked{border:4px solid #7CC8FF;}</string>
+           </property>
+           <property name="text">
+            <string>Муж</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="rb_female">
+           <property name="font">
+            <font>
+             <family>Montserrat</family>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton#rb_female{color:#3E3E3E;}
+QRadioButton#rb_female::indicator{background-color:#fff;width:18px;height:18px;border-radius:13px;}
+QRadioButton#rb_female::indicator:unchecked{border:4px solid #D9D9D9;}
+QRadioButton#rb_female::indicator:checked{border:4px solid #7CC8FF;}</string>
+           </property>
+           <property name="text">
+            <string>Жен</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QFrame" name="f_activity">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <property name="verticalSpacing">
+          <number>2</number>
+         </property>
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="rb_activity2">
+           <property name="font">
+            <font>
+             <family>Montserrat</family>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton#rb_activity2{color:#3E3E3E;}
+QRadioButton#rb_activity2::indicator{background-color:#fff;width:18px;height:18px;border-radius:13px;}
+QRadioButton#rb_activity2::indicator:unchecked{border:4px solid #D9D9D9;}
+QRadioButton#rb_activity2::indicator:checked{border:4px solid #7CC8FF;}</string>
+           </property>
+           <property name="text">
+            <string>Легкая активность</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="rb_activity1">
+           <property name="font">
+            <font>
+             <family>Montserrat</family>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton#rb_activity1{color:#3E3E3E;}
+QRadioButton#rb_activity1::indicator{background-color:#fff;width:18px;height:18px;border-radius:13px;}
+QRadioButton#rb_activity1::indicator:unchecked{border:4px solid #D9D9D9;}
+QRadioButton#rb_activity1::indicator:checked{border:4px solid #7CC8FF;}</string>
+           </property>
+           <property name="text">
+            <string>Сиядчий образ жизни</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QRadioButton" name="rb_activity3">
+           <property name="font">
+            <font>
+             <family>Montserrat</family>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton#rb_activity3{color:#3E3E3E;}
+QRadioButton#rb_activity3::indicator{background-color:#fff;width:18px;height:18px;border-radius:13px;}
+QRadioButton#rb_activity3::indicator:unchecked{border:4px solid #D9D9D9;}
+QRadioButton#rb_activity3::indicator:checked{border:4px solid #7CC8FF;}</string>
+           </property>
+           <property name="text">
+            <string>Средняя активность</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QRadioButton" name="rb_activity4">
+           <property name="font">
+            <font>
+             <family>Montserrat</family>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton#rb_activity4{color:#3E3E3E;}
+QRadioButton#rb_activity4::indicator{background-color:#fff;width:18px;height:18px;border-radius:13px;}
+QRadioButton#rb_activity4::indicator:unchecked{border:4px solid #D9D9D9;}
+QRadioButton#rb_activity4::indicator:checked{border:4px solid #7CC8FF;}</string>
+           </property>
+           <property name="text">
+            <string>Высокая активность</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QLabel" name="l_Welcome">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>64</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>64</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>imgs/welcom_light.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

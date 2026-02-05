@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WindowAddMeal</class>
+ <widget class="QWidget" name="WindowAddMeal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>612</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>612</width>
+    <height>792</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>612</width>
+    <height>792</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MacrosHub - Добавить прием пищи</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../imgs/logo_apple.png</normaloff>../imgs/logo_apple.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#WindowAddMeal{background-color:#fff;}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>30</number>
+   </property>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="btn_add_meal">
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#btn_add_meal{color:#fff;border-radius:30px;background-color:#7CC8FF;}
+QPushButton#btn_add_meal::hover{color:#fff;border-radius:30px;background-color:#52A9FF;}</string>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QFrame" name="f_name_product">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>100</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:#3E3E3E;padding-left:15px;</string>
+        </property>
+        <property name="text">
+         <string>Название продукта</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="le_FoodName">
+        <property name="minimumSize">
+         <size>
+          <width>460</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>460</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat Medium</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit#le_FoodName{background-color:#FFF;border:4px solid #7CC8FF;border-radius:30px;padding-left:30px;padding-right:30px;color:#3E3E3E;}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QFrame" name="f_weight_product">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:#3E3E3E;padding-left:15px;</string>
+        </property>
+        <property name="text">
+         <string>Вес продукта, г</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="le_FoodWeight">
+        <property name="minimumSize">
+         <size>
+          <width>460</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>460</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat Medium</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit#le_FoodWeight{background-color:#FFF;border:4px solid #7CC8FF;border-radius:30px;padding-left:30px;padding-right:30px;color:#3E3E3E;}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QFrame" name="f_choise_product">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <property name="verticalSpacing">
+       <number>15</number>
+      </property>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="btn_choise3">
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btn_choise3{background-color:#FFF; border:none;color:#3E3E3E;}
+QPushButton#btn_choise3::hover{text-decoration:underline;}</string>
+        </property>
+        <property name="text">
+         <string>Выбор 3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btn_choise2">
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btn_choise2{background-color:#FFF; border:none;color:#3E3E3E;}
+QPushButton#btn_choise2::hover{text-decoration:underline;}</string>
+        </property>
+        <property name="text">
+         <string>Выбор 2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btn_choise1">
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btn_choise1{background-color:#FFF; border:none;color:#3E3E3E;}
+QPushButton#btn_choise1::hover{text-decoration:underline;}</string>
+        </property>
+        <property name="text">
+         <string>Выбор 1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="3">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
