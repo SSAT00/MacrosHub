@@ -1,1 +1,3 @@
-_pycache_/
+__pycache__/
+data/__pycache__/
+data/ui_files/
