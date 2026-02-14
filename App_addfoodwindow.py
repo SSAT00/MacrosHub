@@ -65,6 +65,9 @@ class AppAddFood:
     def add_todays_food(self):
         name = self.ui_add_food.le_FoodName.text()
         weight = self.ui_add_food.le_FoodWeight.text()
+
+    def open_window_add_new_food_params():
+        pass
         
 
 

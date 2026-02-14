@@ -15,6 +15,7 @@ class Ui_WindowAddMeal(Window):
         self.icon_apple.addPixmap(QtGui.QPixmap("data/imgs/logo_apple.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.gridLayout = QtWidgets.QGridLayout(self.WindowAddMeal)
         self.btn_add_meal = QtWidgets.QPushButton(self.WindowAddMeal)
+        self.btn_add_new_meal_params = QtWidgets.QPushButton(self.WindowAddMeal)
         self.f_name_product = QtWidgets.QFrame(self.WindowAddMeal)
         self.gridLayout_2 = QtWidgets.QGridLayout(self.f_name_product)
         self.label = QtWidgets.QLabel(self.f_name_product)
@@ -44,7 +45,14 @@ class Ui_WindowAddMeal(Window):
         self.font_medium.setPointSize(13)
         self.btn_add_meal.setFont(self.font_medium)
         self.btn_add_meal.setObjectName("btn_add_meal")
-        self.gridLayout.addWidget(self.btn_add_meal, 4, 1, 1, 1)
+        self.gridLayout.addWidget(self.btn_add_meal, 6, 1, 1, 1)
+
+        self.btn_add_new_meal_params.setMinimumSize(QtCore.QSize(300, 60))
+        self.btn_add_new_meal_params.setMaximumSize(QtCore.QSize(300, 60))
+        self.font_medium.setPointSize(13)
+        self.btn_add_new_meal_params.setFont(self.font_medium)
+        self.btn_add_new_meal_params.setObjectName("btn_add_meal")
+        self.gridLayout.addWidget(self.btn_add_new_meal_params, 4, 1, 1, 1)
         
         self.f_name_product.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.f_name_product.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -120,6 +128,8 @@ class Ui_WindowAddMeal(Window):
         self.gridLayout.addWidget(self.f_choise_product, 1, 0, 1, 3)
         spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem1, 3, 0, 1, 3)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem2, 5, 0, 1, 3)
 
         self.past_styles()
 
@@ -130,6 +140,7 @@ class Ui_WindowAddMeal(Window):
         _translate = QtCore.QCoreApplication.translate
         self.WindowAddMeal.setWindowTitle(_translate("WindowAddMeal", "MacrosHub - Добавить прием пищи"))
         self.btn_add_meal.setText(_translate("WindowAddMeal", "Добавить"))
+        self.btn_add_new_meal_params.setText(_translate("WindowAddMeal", "Новый продукт"))
         self.label.setText(_translate("WindowAddMeal", "Название продукта"))
         self.label_2.setText(_translate("WindowAddMeal", "Вес продукта, г"))
         self.btn_choise3.setText(_translate("WindowAddMeal", ""))
@@ -154,6 +165,8 @@ class Ui_WindowAddMeal(Window):
         
         self.WindowAddMeal.setStyleSheet("QWidget#WindowAddMeal{background-color:"f"{c1}"";}")
         self.btn_add_meal.setStyleSheet("QPushButton#btn_add_meal{color:#fff;border-radius:30px;background-color:#7CC8FF;}\n"
+                                        "QPushButton#btn_add_meal::hover{color:#fff;border-radius:30px;background-color:#52A9FF;}")
+        self.btn_add_new_meal_params.setStyleSheet("QPushButton#btn_add_meal{color:#fff;border-radius:30px;background-color:#7CC8FF;}\n"
                                         "QPushButton#btn_add_meal::hover{color:#fff;border-radius:30px;background-color:#52A9FF;}")
         self.label.setStyleSheet("color:"f"{c3}"";padding-left:15px;")
         self.le_FoodName.setStyleSheet("QLineEdit#le_FoodName{background-color:"f"{c1}"";border:4px solid #7CC8FF;"
